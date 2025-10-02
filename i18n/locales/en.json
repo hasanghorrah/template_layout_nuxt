@@ -1,0 +1,79 @@
+﻿{
+  "header": {
+    "balance": "Current balance",
+    "safePay": "Payment secured 100%",
+    "support": "Support 24/7",
+    "reminder": "Reminder: Update your billing info to keep services running",
+    "details": "View details"
+  },
+  "sidebar": {
+    "menu": "Menu",
+    "badges": {
+      "id": "Account {id}",
+      "vip": "VIP member"
+    },
+    "sections": {
+      "home": "Home",
+      "topup": "Top up",
+      "payments": "Payments",
+      "wallet": "Wallet",
+      "orders": "Orders",
+      "agents": "Agents",
+      "security": "Security",
+      "api": "API",
+      "about": "About"
+    },
+    "themeToggle": "Dark mode",
+    "themeHint": "Feel free to toggle the theme",
+    "connect": "Stay in touch"
+  },
+  "layout": {
+    "language": "Language",
+    "arabic": "Arabic",
+    "english": "English"
+  },
+  "auth": {
+    "actions": {
+      "show": "Show",
+      "hide": "Hide"
+    },
+    "placeholders": {
+      "name": "Full name",
+      "email": "name{at}example.com",
+      "password": "********"
+    },
+    "errors": {
+      "unexpected": "Something went wrong. Please try again.",
+      "invalidLogin": "The provided credentials are incorrect.",
+      "validation": "Please review the highlighted fields.",
+      "missingName": "Please enter your name.",
+      "passwordMismatch": "Passwords do not match."
+    },
+    "login": {
+      "title": "Sign in",
+      "subtitle": "Enter your account details to access the dashboard.",
+      "emailLabel": "Email address",
+      "passwordLabel": "Password",
+      "submit": "Sign in",
+      "loading": "Signing you in...",
+      "registerPrompt": "Don't have an account?",
+      "registerLink": "Create one now"
+    },
+    "register": {
+      "title": "Create a new account",
+      "subtitle": "Fill in the details below to start using our services.",
+      "nameLabel": "Full name",
+      "emailLabel": "Email address",
+      "passwordLabel": "Password",
+      "passwordConfirmLabel": "Confirm password",
+      "submit": "Create account",
+      "loading": "Creating your account...",
+      "loginPrompt": "Already registered?",
+      "loginLink": "Sign in"
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,79 @@
+﻿{
+  "header": {
+    "balance": "الرصيد الحالي",
+    "safePay": "دفع آمن 100%",
+    "support": "دعم متواصل 24/7",
+    "reminder": "تذكير: حدّث معلومات الفوترة لضمان استمرار الخدمات",
+    "details": "عرض التفاصيل"
+  },
+  "sidebar": {
+    "menu": "القائمة",
+    "badges": {
+      "id": "رقم الحساب {id}",
+      "vip": "عميل مميز"
+    },
+    "sections": {
+      "home": "الرئيسية",
+      "topup": "شحن الرصيد",
+      "payments": "المدفوعات",
+      "wallet": "المحفظة",
+      "orders": "الطلبات",
+      "agents": "الوكلاء",
+      "security": "الأمان",
+      "api": "واجهة API",
+      "about": "من نحن"
+    },
+    "themeToggle": "الوضع الليلي",
+    "themeHint": "يمكنك التبديل بين الثيمات في أي وقت",
+    "connect": "تواصل معنا"
+  },
+  "layout": {
+    "language": "اللغة",
+    "arabic": "العربية",
+    "english": "الإنجليزية"
+  },
+  "auth": {
+    "actions": {
+      "show": "إظهار",
+      "hide": "إخفاء"
+    },
+    "placeholders": {
+      "name": "الاسم الكامل",
+      "email": "name{at}example.com",
+      "password": "********"
+    },
+    "errors": {
+      "unexpected": "حدث خطأ غير متوقع. حاول مرة أخرى.",
+      "invalidLogin": "بيانات تسجيل الدخول غير صحيحة.",
+      "validation": "تحقق من صحة البيانات المدخلة.",
+      "missingName": "يرجى إدخال الاسم.",
+      "passwordMismatch": "كلمتا المرور غير متطابقتين."
+    },
+    "login": {
+      "title": "تسجيل الدخول",
+      "subtitle": "أدخل بيانات حسابك للوصول إلى لوحة التحكم.",
+      "emailLabel": "البريد الإلكتروني",
+      "passwordLabel": "كلمة المرور",
+      "submit": "تسجيل الدخول",
+      "loading": "جاري تسجيل الدخول...",
+      "registerPrompt": "ليس لديك حساب؟",
+      "registerLink": "إنشاء حساب جديد"
+    },
+    "register": {
+      "title": "إنشاء حساب جديد",
+      "subtitle": "املأ البيانات التالية لإنشاء حسابك والبدء باستخدام الخدمات.",
+      "nameLabel": "الاسم الكامل",
+      "emailLabel": "البريد الإلكتروني",
+      "passwordLabel": "كلمة المرور",
+      "passwordConfirmLabel": "تأكيد كلمة المرور",
+      "submit": "إنشاء الحساب",
+      "loading": "جاري إنشاء الحساب...",
+      "loginPrompt": "لديك حساب بالفعل؟",
+      "loginLink": "تسجيل الدخول"
+    }
+  }
+}
+
+
+
+
