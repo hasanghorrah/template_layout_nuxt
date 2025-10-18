@@ -8,7 +8,11 @@
     </header>
 
     <div class="layout-main">
-            <transition :name="slideTransition">
+        
+      <div class="relative flex-1 bg-surface-light/40 py-6 dark:bg-surface-dark/60">
+        <div class="layout-shell flex w-full flex-col gap-6 px-0 lg:flex-row lg:items-start lg:gap-8">
+    
+    <transition :name="slideTransition">
             <SidebarNav
               v-if="isSidebarOpen"
               :is-mobile="!isDesktop"
@@ -19,10 +23,6 @@
               ]"
             />
           </transition>
-      <div class="relative flex-1 bg-surface-light/40 py-6 dark:bg-surface-dark/60">
-        <div class="layout-shell flex w-full flex-col gap-6 px-0 lg:flex-row lg:items-start lg:gap-8">
-    
-
           <main
             :dir="direction"
             :class="[
@@ -39,7 +39,7 @@
         <transition name="fade">
           <div
             v-if="isSidebarOpen && !isDesktop"
-            class="fixed inset-0 z-40 bg-black/60"
+            class="fixed inset-0 z-[70] bg-black/60"
             @click="toggleSidebar"
           ></div>
         </transition>
@@ -48,7 +48,7 @@
 
     <footer ref="footerRef" class="layout-footer" :dir="direction">
       <div class="mx-auto w-full max-w-7xl px-4 pb-6 pt-4 lg:px-6">
-        <BottomBar />
+        <BottomBar class="block lg:hidden" />
       </div>
     </footer>
   </div>
@@ -69,8 +69,10 @@ const footerRef = ref<HTMLElement | null>(null)
 const isDesktop = ref(false)
 const isSidebarOpen = ref(true)
 const slideTransition = computed(() => (direction.value === 'ltr' ? 'slide-left' : 'slide-right'))
-const mainOrderClass = computed(() => (direction.value === 'ltr' ? 'lg:order-2' : 'lg:order-1'))
-const sidebarOrderClass = computed(() => (direction.value === 'ltr' ? 'lg:order-1' : 'lg:order-2'))
+// Keep sidebar first in DOM order for both LTR and RTL.
+// In RTL, flex row renders the first item on the right automatically.
+const mainOrderClass = computed(() => 'lg:order-2')
+const sidebarOrderClass = computed(() => 'lg:order-1')
 
 const setOffsets = () => {
   if (!import.meta.client) return

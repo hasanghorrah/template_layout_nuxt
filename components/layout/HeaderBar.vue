@@ -1,49 +1,38 @@
 ﻿<template>
-  <header class="bg-[#165f56] text-white shadow-[0_20px_45px_rgba(0,0,0,0.25)]">
+  <header class="bg-white text-slate-900 border-b border-slate-200 shadow-soft dark:bg-[#165f56] dark:text-white dark:border-transparent">
     <div
-      class="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-4 lg:flex-row lg:items-center lg:justify-between lg:px-6"
+      class="mx-auto flex w-full max-w-7xl items-center justify-between gap-2 px-3 py-3 lg:gap-3 lg:px-6 lg:py-4"
     >
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3 flex-1 min-w-0">
         <button
           type="button"
-          class="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-2xl transition hover:bg-white/20"
+          class="flex h-12 w-12 items-center justify-center rounded-full text-2xl transition bg-slate-100 hover:bg-slate-200 text-slate-700 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
           @click="$emit('toggleSidebar')"
         >
-          ☰
+        ☰
         </button>
-  
-        <div class="hidden items-center gap-3 rounded-[999px] bg-white/10 px-4 py-2 text-sm lg:flex">
-          <span>{{ t('header.balance') }}</span>
-          <span class="rounded-full bg-white/20 px-3 py-1 text-sm font-semibold">USD 132.04</span>
-        </div>
+        <NuxtLink to="/" class="inline-flex items-center gap-2 select-none" aria-label="Home">
+          <img src="/logo.png" alt="Logo" class="h-8 w-auto" />
+        </NuxtLink>
+
       </div>
 
-      <div class="flex flex-wrap items-center gap-3 text-sm">
-       
+      <div class="flex items-center gap-2 text-sm flex-nowrap whitespace-nowrap shrink-0">
+        
         <button
           type="button"
-          class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-xl transition hover:bg-white/20"
+          class="flex h-10 w-10 items-center justify-center rounded-full text-xl transition bg-slate-100 hover:bg-slate-200 text-slate-700 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white md:h-11 md:w-11"
         >
-          🔔
+         🔔
         </button>
         <LanguageSwitcher />
       </div>
     </div>
-    <div class="bg-[#f4b919] text-slate-900">
-      <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-2 text-sm lg:px-6">
-        <span>{{ t('header.reminder') }}</span>
-        <button
-          type="button"
-          class="hidden rounded-full bg-slate-900/20 px-4 py-1 text-xs font-semibold text-slate-900 lg:block"
-        >
-          {{ t('header.details') }}
-        </button>
-      </div>
-    </div>
+    <!-- Reminder banner removed per request -->
   </header>
+  
 </template>
 
 <script setup lang="ts">
 const { t } = useI18n({ useScope: 'global' })
 </script>
-
